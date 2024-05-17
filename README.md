@@ -37,6 +37,8 @@ cd p4 && go run .
 
 and if all goes well, we shall see something like
 
+![Screen for For Parties](screen-for-four-parties.png)
+
 ```
 smiletrl@Rulins-MacBook-Pro p1 % go run .
 2024/05/10 00:11:24 prepare keygen
