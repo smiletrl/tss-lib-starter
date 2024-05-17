@@ -2,6 +2,8 @@
 
 This is a starter to implement [tss-lib](https://github.com/bnb-chain/tss-lib) with Go. In particular, it makes use of ESDSA for Threshold Signature Scheme. Refer [eprint.iacr.org/2019/114.pdf](https://eprint.iacr.org/2019/114.pdf).
 
+[Protobuf](https://github.com/golang/protobuf) is used for message exchange between parties. But it's important to know that this is just a starter, remember to read [how-to-use-this-securely](https://github.com/bnb-chain/tss-lib?tab=readme-ov-file#how-to-use-this-securely).
+
 # Mock p0
 
 `p0` holds a test env which manages parties within one Go app. These parties run separately within different goroutines
