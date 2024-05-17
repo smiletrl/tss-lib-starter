@@ -139,7 +139,7 @@ This last two line `2024/05/10 10:24:57 sign err: task signing, party {0,tss1}, 
 
 # Change proto
 
-In case you want to play with grpc server, here's the command to change proto
+In case you want to play with grpc server, here's the command to generate proto files.
 
 ```
 cd pkg/grpc
