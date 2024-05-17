@@ -28,7 +28,7 @@ Signature verify result: [true]
 
 `p1`, `p2`, `p3`, `p4` mock four different nodes, like four devices. Each node will have its own keygen and sign method. The idea is to use grpc to do message exchange.
 
-open four terminals and run each line at each separate terminal window
+Open four terminals and run each line at each separate terminal window
 
 ```
 cd p1 && go run .
