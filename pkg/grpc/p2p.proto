@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option go_package = "github.com/smiletrl/tss-lib-starter/pkg/grpc";
+
+import "google/protobuf/empty.proto";
+
+import "google/protobuf/any.proto";
+
+package proto;
+
+// P2P service definition.
+// party to party for message exchange
+service P2P {
+  // on receive message
+  rpc OnReceiveMessage(Message) returns(google.protobuf.Empty){}
+}
+
+message Message {
+  // whether this message is broadcast
+  bool is_broadcast = 1;
+
+  // which part id this message comes from 
+  string from_pid = 2;
+
+  // which message type is for this message, like `keygen`, or `signing`
+  string type = 3;
+
+  // message content
+  // google.protobuf.Any content = 10;
+  bytes content = 4;
+
+  google.protobuf.Any message = 10;
+}
