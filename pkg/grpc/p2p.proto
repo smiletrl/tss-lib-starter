@@ -4,8 +4,6 @@ option go_package = "github.com/smiletrl/tss-lib-starter/pkg/grpc";
 
 import "google/protobuf/empty.proto";
 
-import "google/protobuf/any.proto";
-
 package proto;
 
 // P2P service definition.
@@ -26,8 +24,5 @@ message Message {
   string type = 3;
 
   // message content
-  // google.protobuf.Any content = 10;
   bytes content = 4;
-
-  google.protobuf.Any message = 10;
 }

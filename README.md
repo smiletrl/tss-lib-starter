@@ -136,3 +136,14 @@ smiletrl@Rulins-MacBook-Pro p1 % go run .
 This last two line `2024/05/10 10:24:57 sign err: task signing, party {0,tss1}, round 1: t+1=3 is not satisfied by the key count of 2` has indicated that signature fails with non-sufficient parties
 
 !Important note: every time we want to sign a new message, we have to restart all four parties.
+
+# Change proto
+
+In case you want to play with grpc server, here's the command to change proto
+
+```
+cd pkg/grpc
+protoc --go_out=. --go_opt=paths=source_relative \
+    --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+    p2p.proto
+```
